@@ -30,22 +30,22 @@
                                 <i class="fa fa-times" onclick="navExit()"></i>
                                 <ul>
                                     <a href="index.html" class="home"><li>Home</li></a>
-                                    <a href="photos/index.html" class="photos"><li>Photos</li></a>
-                                    <a href="about/index.html" class="about"><li>About</li></a>
-                                    <a href="contact/index.html"><li class="contact2">Contact</li></a>
+                                    <a href=#about class="Tentang"><li>Tentang</li></a>
+                                    <a href=#portofolio class="Portofolio"><li>Portofolio</li></a>
+                                    <a href="https://www.instagram.com/ninobramantara/"><li class="contact2">Contact</li></a>
                                 </ul>
                             </nav>
                         </div>
-                        <a href="contact/index.html" class="button_link"><button>Contact</button></a>
+                        <a href="https://www.instagram.com/ninobramantara/" class="button_link"><button>Contact</button></a>
                     </div>
                     <div class="content">
                         <div class="photo">
 
                         </div>
                         <div class="text">
-                            <h4>Selamat datang!</h4>
-                            <p>Saya Ninobramantara atau Endrino Surya Bramantara, <br> seorang pelajar E3 yang ingin bergabung ke <br> <span> OSIS 44 SMA N 1 Muntilan.</span></p>
-                            <a href="" target="_blank" class="cv_button"><button><span>
+                            <h4 class="animate__slideInLeft">Selamat datang!</h4>
+                            <p class="animate__fadeIn">Saya Ninobramantara atau Endrino Surya Bramantara, <br> seorang pelajar E3 yang ingin bergabung ke <br> <span> OSIS 44 SMA N 1 Muntilan.</span></p>
+                            <a href="" target="_blank" class="cv_button animate__fadeIn"><button><span>
                             </span>Download CV</button></a>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </section>
-    <section class="section_3">
+    <section class="section_3" id="about">
         <div class="main">
             <div class="container">
                 <div class="content">
@@ -72,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="section_2">
+    <section class="section_2" id="portofolio">
         <div class="main">
             <div class="container">
                 <div class="content">
@@ -121,5 +121,40 @@
             </div>
         </div>
     </section>
+    <section class="footer">
+        <div class="footer-col">
+            <div class="col1">
+                <h2>Thanks for Visiting</h2>
+                <p> Made with <i class="fa-regular fa-heart"></i> </i> and <i class="fa-solid fa-fire"></i> in Muntilan district, Magelang regency, Central Java province, Indonesia </p>
+                <ul>
+                    <a href="https://www.instagram.com/ninobramantara/">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </a><a href="https://discordapp.com/users/331074387597983744/">
+                        <li><i class="fa-brands fa-discord"></i></li>
+                    </a>
+                    <a href="https://wa.me/qr/4XK6TKVTEOFGE1">
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                    </a>
+                </ul>
+            </div>
+            
+            <div class="col2">
+                <h3>Usefull Links</h3>
+                <a href=#about>Tentang</a>
+                <a href=#portofolio>Portofolio</a>
+                <a href="https://www.instagram.com/ninobramantara/">Contact</a>
+            </div>
+        </div>
+    </section>
+     <!--========================= JAVASCRIPT TOOGLE THE NAV BAR ===========================-->
+    <script>
+        navLinks = document.getElementById('navLink');
+        function navExit(){
+            navLinks.style.right = '-200px';
+        }
+        function navMenu(){
+            navLinks.style.right = 0;
+        }
+    </script>
 </body>
 </html>
