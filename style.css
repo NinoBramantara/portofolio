@@ -203,7 +203,114 @@ nav li:hover::after{
 .section_1 .content .text a button:hover span{
     width: 100%;
 }
+.section_1 .content .text a button:hover{
+    color: white;
+}
 
+
+
+.section_2{
+    height: 100vh;
+    width: 100%;
+    background-color: #0b1034;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.section_2 .content h1{
+    font-size: 30px;
+    font-weight: var(--font-medium);
+}
+.section_2 .content h2{
+    font-size: 25px;
+    font-weight: var(--font-medium);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700) {
+    html, body{
+        /*style the html, body and make overflow of x axist hidden*/
+        font-size: 12px;
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    .header{
+        /*style the header*/
+        max-width: auto;
+    }
+    .header img{
+        /*style the width of logo*/
+        width: 100px;
+    }
+    .header button{
+        /*make contat button invisible*/
+        display: none;
+    }
+    .header .fa-bars{
+        /*style the menu bars*/
+        font-size: 25px;
+        right: 20px;
+        position: absolute;
+    }
+    .nav-links{
+        /*style the navigation on the mobile devices*/
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        background: rgba(163, 108, 46,0.95);
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav-links nav ul li{
+        /*style the list of link*/
+        display: block;
+        padding: 25px;
+        margin: 0;
+        border: solid lightgray 1px;
+    }
+    .nav-links nav ul li::after{
+        bottom: 0;
+    }
+    .nav-links nav ul li:hover{
+        border: none;
+    }
+    nav .contact2{
+        /*make contact2 visible for mobile users*/
+        display: block;
+    }
+    .nav-links .fa-times{
+        /*style the exit icon*/
+        margin: 10px;
+        font-size: 25px;
+    }
+    .nav-links nav ul a{
+        /*style the link*/
+        font-size: 16px;
+        padding: 0;
+    }
+    .header .fa{
+        /*make all icon on navbar visible to desktop users*/
+        display: block;
+    }
+
+    
+    .content{
+        position: absolute;
+    }
+}
 
 
 
