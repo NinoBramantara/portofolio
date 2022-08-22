@@ -154,6 +154,9 @@ nav li:hover::after{
 .header .fa {
     display: none;
 }
+/* .navigation {
+    display: none;
+} */
 
 
 .section_1 .content{
@@ -220,10 +223,24 @@ nav li:hover::after{
 .section_2 .content h1{
     font-size: 30px;
     font-weight: var(--font-medium);
+    margin: 20px 0;
+    text-align: center;
 }
 .section_2 .content h2{
     font-size: 25px;
     font-weight: var(--font-medium);
+}
+
+.section_2 .content .poster_wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.section_2 .content .poster img{
+    height: auto;
+    width: 280px;
+    margin-right: 10px;
 }
 
 
