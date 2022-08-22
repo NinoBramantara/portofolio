@@ -49,7 +49,8 @@ html {
 
 .banner{
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url(media/image/anime-sky-wallpapers.jpg); 
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -96,7 +97,7 @@ nav .contact2{
 }
 nav li:hover{
     /*change color when hover*/
-    color: #ffac4a;
+    color: #5bbfff;
     animation: all 0.3s ease 0s
 }
 nav li::after{
@@ -104,7 +105,7 @@ nav li::after{
     content: '';
     height: 3px;
     width: 0;
-    background: #ffac4a;
+    background: #5bbfff;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -137,7 +138,7 @@ nav li:hover::after{
     cursor: pointer;
     color: white;
     font-weight: var(--font-semi-bold);
-    background-color: rgba(199, 133, 56, 1);
+    background-color: rgba(91,191,255, 1);
     padding: 8px 20px;
     border-radius: 50px;
     border: none;
@@ -145,13 +146,62 @@ nav li:hover::after{
 }
 /*contact button*/
 .header button:hover{
-    background-color: rgba(199, 133, 56, 0.6);
+    background-color: rgba(91,191,255, 0.6);
     animation: contact-button 3s ease-in-out 0s infinite both;
     color: rgba(255, 255, 255, 0.6)
 }
 /*contact button when hover*/
 .header .fa {
     display: none;
+}
+
+
+.section_1 .content{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    place-content: center;
+    width: 100%;
+    height: 75vh;
+}
+.section_1 .content .text{
+    font-size: 30px;
+}
+.section_1 .content .text h4{
+    font-size: 40px;
+    font-weight: var(--font-medium);
+}
+.section_1 .content .text span{
+    color: #329dfa;
+    font-weight: var(--font-semi-bold);
+}
+.section_1 .content .text button{
+    display: inline-block;
+    padding: 10px 20px;
+    border: #5bbfff solid 3px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: var(--font-medium);
+    color: lightgray;
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.section_1 .content .text a span{
+    height: 100%;
+    width: 0%;
+    background-color: #5bbfff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+.section_1 .content .text a button:hover span{
+    width: 100%;
 }
 
 
