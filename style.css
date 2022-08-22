@@ -284,6 +284,9 @@ nav li:hover::after{
     margin-right: 40px;
     margin-left: -10px;
 }
+.section_2 .content .foto_container .mobile_alert{
+    display: none;
+}
 
 
 .section_3{
@@ -426,84 +429,224 @@ nav li:hover::after{
 
 
 
-@media (max-width: 700) {
-    html, body{
-        /*style the html, body and make overflow of x axist hidden*/
-        font-size: 12px;
-        width: 100%;
+@media (max-width: 700px){
+    html, body {
         min-height: 100vh;
-        position: absolute;
+        width: 100%;
         scroll-behavior: smooth;
         overflow-x: hidden;
+        position: absolute;
     }
-    .header{
-        /*style the header*/
-        max-width: auto;
+
+    .section_1 {
+        height: 100vh;
+        width: 100%;
     }
-    .header img{
-        /*style the width of logo*/
-        width: 100px;
+    .section_1 .header .navlinks{
+        position: absolute;
+        box-sizing: border-box;
+        background-color: rgba(24, 154, 180, 0.95);
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        z-index: 2;
+        transition: 1s;
     }
-    .header button{
-        /*make contat button invisible*/
-        display: none;
+    .section_1 .header .navlinks ul li{
+        display: block;
+        padding: 25px;
+        font-size: 14px;
+        margin: 0px;
+        border: solid lightgray 1px;
     }
-    .header .fa-bars{
+    .section_1 .header nav .fa {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        margin: 5px;
+        color: lightgray;
+    }
+    .section_1 .nav-links nav ul li::after{
+        bottom: 0;
+    }
+    .section_1 .nav-links nav ul li:hover{
+        border: none;
+    }
+    .section_1 .header .navlinks .contact2{
+        display: block;
+    }
+    .section_1 .header .fa{
+        display: block;
+    }
+    .section_1 .header .fa-bars{
         /*style the menu bars*/
         font-size: 25px;
         right: 20px;
         position: absolute;
     }
-    .nav-links{
-        /*style the navigation on the mobile devices*/
-        position: absolute;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        background: rgba(163, 108, 46,0.95);
-        z-index: 2;
-        transition: 1s;
-    }
-    .nav-links nav ul li{
-        /*style the list of link*/
-        display: block;
-        padding: 25px;
-        margin: 0;
-        border: solid lightgray 1px;
-    }
-    .nav-links nav ul li::after{
-        bottom: 0;
-    }
-    .nav-links nav ul li:hover{
-        border: none;
-    }
-    nav .contact2{
-        /*make contact2 visible for mobile users*/
-        display: block;
-    }
-    .nav-links .fa-times{
+    .section_1 .nav-links .fa-times{
         /*style the exit icon*/
         margin: 10px;
         font-size: 25px;
     }
-    .nav-links nav ul a{
-        /*style the link*/
-        font-size: 16px;
-        padding: 0;
+    .section_1 .button_link {
+        display: none;
     }
-    .header .fa{
-        /*make all icon on navbar visible to desktop users*/
+    .section_1 .header img{
+        width: 100px;
+        margin: 20px 10px;
+    }
+    .section_1 .header .logo_icon{
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .section_1 .header .menu-icon{
+        /*style the menu icon*/
         display: block;
+        font-size:  25px;
+        cursor: pointer;
+        margin: 5px;
+        padding-right: 20px;
+        color: lightgray;
     }
 
+
+    .section_1 .container {
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .section_1 .content .text{
+        margin: 0 20px; 
+    }
+    .section_1 .content .text p{
+        font-size: 20px;
+    }
+    .section_1 .content .text p span{
+        font-weight: var(--font-semi-bold);
+    }
+
+
+
+    .section_2 {
+        display: flex;
+        justify-content: center;
+    }
+    .section_2 .content h1{
+        margin: 40px 10px;
+        font-size: 30px;
+    }
+    .section_2 .content h2{
+        font-size: 20px;
+        font-weight: var(--font-medium);
+        margin-bottom: 5px;
+    }
+    .section_2 .content .poster_wrap{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .section_2 .content .poster img{
+        height: auto;
+        width: 100px;
+        margin-right: 10px;
+    }
     
-    .content{
-        position: absolute;
+    .section_2 .content .foto_container {
+        margin-top: 30px;
     }
+    .section_2 .content .foto_wrap {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .section_2 .content .foto img{
+        height: auto;
+        width: 100px;
+    }
+    .section_2 .content .foto{
+        margin-right: 10px;
+    }
+    .section_2 .content .foto_wrap:nth-child(2) .foto img{
+        height: auto;
+        width: 100px;
+    }
+    .section_2 .content table td img{
+        height: auto;
+        width: 100px;
+    }
+    .section_2 .content table{
+        border: solid #FFD700 2px;
+        font-size: 14px;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: -10px;
+    }
+    .section_2 .content .foto_container .mobile_alert{
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+    }
+    
+
+    .section_3{
+        height: 110vh;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        background-color: #0b1034;
+    }
+    .section_3 .content h1{
+        font-size: 35px;
+        font-weight: var(--font-semi-bold);
+        margin: 20px;
+        text-align: center;
+    }
+    .section_3 .content .profile{
+        display: flex;
+        justify-content: center;
+    }
+    .section_3 .content .profile__picture{
+        /*style the picture content*/
+        width: 175px;
+        height: 175px;
+        background-color: #5bbfff;
+        border-radius: 50%;
+        box-shadow: linear-gradient(rgb(216, 187, 187), rgba(220, 195, 195, 0.6));
+        display: grid;
+        place-items: center;
+    }
+    .section_3 .content .profile__picture img{
+        /*style the photo profile*/
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .section_3 .content .text{
+        margin: 20px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .section_3 .content .text .salken{
+        display: inline-block;
+        font-size: 25px;
+        line-height: 0;
+    }
+    .section_3 .content .text a{
+        color: lightblue;
+    }
+    .section_3 .content .text p .Photoshop{
+        color:#8BC3FC;
+    }
+    .section_3 .content .text p .Lightroom{
+        color: #B4D6E0;
+    }
+    
+
 }
-
-
 
 
 
