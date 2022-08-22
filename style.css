@@ -215,22 +215,22 @@ nav li:hover::after{
 .section_2{
     height: 100vh;
     width: 100%;
-    background-color: #0b1034;
+    background-color: #090d2b;
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
 .section_2 .content h1{
     font-size: 30px;
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
     margin: 20px 0;
     text-align: center;
 }
 .section_2 .content h2{
     font-size: 25px;
     font-weight: var(--font-medium);
+    margin-bottom: 10px;
 }
-
 .section_2 .content .poster_wrap{
     display: flex;
     flex-wrap: nowrap;
@@ -239,8 +239,94 @@ nav li:hover::after{
 }
 .section_2 .content .poster img{
     height: auto;
-    width: 280px;
-    margin-right: 10px;
+    width: 200px;
+    margin-right: 40px;
+}
+
+.section_2 .content .foto_container {
+    margin-top: 20px;
+}
+.section_2 .content .foto_wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.section_2 .content .foto img{
+    height: auto;
+    width: 150px;
+}
+.section_2 .content .foto{
+    margin-right: 40px;
+}
+.section_2 .content .foto_wrap:nth-child(2) .foto img{
+    height: auto;
+    width: 170px;
+}
+.section_2 .content table td img{
+    height: auto;
+    width: 200px;
+}
+.section_2 .content table{
+    border: solid #FFD700 2px;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: -10px;
+}
+
+
+.section_3{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #0b1034;
+}
+.section_3 .content h1{
+    font-size: 35px;
+    font-weight: var(--font-semi-bold);
+    margin: 20px 0;
+    text-align: center;
+}
+.section_3 .content .profile{
+    display: flex;
+    justify-content: center;
+}
+.section_3 .content .profile__picture{
+    /*style the picture content*/
+    width: 200px;
+    height: 200px;
+    background-color: #5bbfff;
+    border-radius: 50%;
+    box-shadow: linear-gradient(rgb(216, 187, 187), rgba(220, 195, 195, 0.6));
+    display: grid;
+    place-items: center;
+}
+.section_3 .content .profile__picture img{
+    /*style the photo profile*/
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+}
+.section_3 .content .text{
+    margin: 30px 200px;
+    font-size: 20px;
+    text-align: justify;
+}
+.section_3 .content .text .salken{
+    display: inline-block;
+    font-size: 35px;
+    line-height: 0;
+}
+.section_3 .content .text a{
+    color: lightblue;
+}
+.section_3 .content .text p .Photoshop{
+    color:#8BC3FC;
+}
+.section_3 .content .text p .Lightroom{
+    color: #B4D6E0;
 }
 
 
